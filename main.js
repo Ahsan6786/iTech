@@ -66,6 +66,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  const contactMobileBtn = document.getElementById('btn-nav-contact-mobile');
+  if (contactMobileBtn) {
+    contactMobileBtn.addEventListener('click', () => {
+      mobileToggle.classList.remove('active');
+      navMenu.classList.remove('active');
+    });
+  }
+
   // Close mobile nav when clicking outside the navbar
   document.addEventListener('click', (e) => {
     if (navMenu.classList.contains('active') && 

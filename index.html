@@ -21,7 +21,7 @@
     <div class="nav-container">
       <a href="#" class="logo" id="nav-logo">
         <img src="assets/logo.png" alt="iTech Logo" class="logo-img">
-        <span class="logo-text">iTech</span>
+        <span class="logo-text"></span>
       </a>
       
       <nav class="nav-links-container" id="nav-menu">
@@ -34,6 +34,7 @@
           <li><a href="#process" class="nav-link">Process</a></li>
           <li><a href="#achievements" class="nav-link">Stats</a></li>
           <li><a href="#careers" class="nav-link">Careers</a></li>
+          <li class="nav-mobile-only"><a href="#contact" class="btn btn-primary btn-full" id="btn-nav-contact-mobile">Get in Touch</a></li>
         </ul>
       </nav>
       
@@ -53,15 +54,17 @@
     <!-- Hero Section -->
     <section class="hero-section" id="hero">
       <div class="hero-bg-image-wrapper">
-        <img src="assets/hero.png" alt="Futuristic Robotic Automation Backdrop" class="hero-bg-image">
+        <video class="hero-bg-video" autoplay muted loop playsinline>
+  <source src="assets/hero.mp4" type="video/mp4">
+</video>
         <div class="hero-bg-overlay"></div>
       </div>
       <div class="hero-bg-grid"></div>
       <div class="container hero-container">
         <div class="hero-content scroll-reveal">
-          <div class="badge">Enterprise-Grade Automation</div>
-          <h1 class="hero-title">Engineering the Future<br>of Robotics & Automation</h1>
-          <p class="hero-subtitle">Advanced robotic automation solutions for manufacturing, automotive, railway, defence, and industrial sectors.</p>
+    
+          <h1 class="hero-title">Engineering the Future<br class="desktop-only">of Robotics & Automation</h1>
+
           <div class="hero-actions">
             <a href="#showcase" class="btn btn-primary btn-large" id="btn-hero-solutions">Explore Solutions</a>
             <a href="#about" class="btn btn-secondary btn-large" id="btn-hero-learn">Learn More</a>
